@@ -3,7 +3,7 @@
 # 🔥 Introdução
 O PAS Play é uma plataforma de streaming que oferece uma ampla variedade de filmes e séries para os usuários. Este projeto visa proporcionar uma experiência envolvente e acessível para os amantes de cinema, permitindo-lhes explorar e desfrutar de conteúdos diversificados diretamente em seus dispositivos.
 
-ℹ️ Objetivos e Funcionalidades
+# ℹ️ Objetivos e Funcionalidades
 O objetivo principal do PAS Play é proporcionar uma experiência de streaming de alta qualidade, com um design intuitivo e funcionalidades que incluem:
 
 1. **Catálogo Diversificado:** Uma extensa coleção de filmes e séries, incluindo lançamentos recentes, clássicos e conteúdos exclusivos.
