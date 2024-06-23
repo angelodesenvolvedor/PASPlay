@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAS Play</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./img/claquete.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="bg-dark text-light py-3">
+        <div class="container">
+            <h1 class="mb-0">PAS Play</h1>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">PAS Play</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#filmes">Filmes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#series">Séries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#documentarios">Documentários</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Pesquisar</button>
+                </form>
+                <button id="resetSearch" class="btn btn-outline-light ms-2">
+                    <i class="bi bi-film"></i> Mostrar Todos
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide mt-4" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/Bad.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block text-center custom-caption">
+                    <h5>Bad Boys: Até o Fim</h5>
+                    <p>Bad Boys: Até o Fim é o quarto filme da saga de ação estrelada por Will Smith e Martin Lawrence. Desta vez, os detetives de Miami, Mike Lowrey e Marcus Burnett, se tornam os mais procurados. Com direção de Adil El Arbi e Bilall Fallah, o filme promete ação eletrizante e comédia enquanto a dupla luta para limpar seus nomes e proteger a reputação do capitão Howard.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/Agents of Mystery.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block text-center custom-caption">
+                    <h5>Agents of Mystery</h5>
+                    <p>Em Agents of Mystery, uma equipe de agentes especiais investiga casos que são, aparentemente, inconclusivos de acordo com a ciência. No reality show, os agentes do mistério Lee Yong-jin, John Park, Lee Eun-ji, Lee Hye-ri, Kim Do-hoon e Karina buscam soluções criativas para solucionar incidentes bizarros pela Coréia do Sul.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/Desespero Profundo.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block text-center custom-caption">
+                    <h5>Desespero Profundo</h5>
+                    <p>Desespero Profundo acompanha um grupo de desconhecidos com diferentes origens que acabam presos em meio ao Oceano Pacífico após o avião em que estavam cair na água. Sobrevivendo apenas graças a uma bolsa de ar e com o avião parado assustadoramente próximo a uma ravina, passageiros e tripulantes devem trabalhar juntos para enfrentar os perigos que os cercam por todos os lados.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Modalidades de Assinatura -->
+<section id="modalidades-assinatura" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Modalidades de Assinatura</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col mb-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Assinatura Básica</h5>
+                        <p class="card-text text-center">Acesso a filmes e séries limitados</p>
+                        <p class="card-text text-center">R$ 19,99 / mês</p>
+                        <button type="button" class="btn btn-primary d-block mx-auto" data-bs-toggle="modal" data-bs-target="#modalAssinatura1">
+                            Saiba Mais
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Assinatura Premium</h5>
+                        <p class="card-text text-center">Acesso ilimitado a todo o catálogo</p>
+                        <p class="card-text text-center">R$ 39,99 / mês</p>
+                        <button type="button" class="btn btn-primary d-block mx-auto" data-bs-toggle="modal" data-bs-target="#modalAssinatura2">
+                            Saiba Mais
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Assinatura Familiar</h5>
+                        <p class="card-text text-center">Acesso simultâneo em múltiplos dispositivos</p>
+                        <p class="card-text text-center">R$ 59,99 / mês</p>
+                        <button type="button" class="btn btn-primary d-block mx-auto" data-bs-toggle="modal" data-bs-target="#modalAssinatura3">
+                            Saiba Mais
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Modal de Assinatura Básica -->
+    <div class="modal fade" id="modalAssinatura1" tabindex="-1" aria-labelledby="modalAssinatura1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalAssinatura1Label">Assinatura Básica</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>A Assinatura Básica oferece acesso a uma seleção limitada de filmes e séries por R$ 19,99 por mês.</p>
+                    <p>Perfeito para quem quer experimentar o serviço antes de decidir por uma assinatura premium.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Assinatura Premium -->
+    <div class="modal fade" id="modalAssinatura2" tabindex="-1" aria-labelledby="modalAssinatura2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalAssinatura2Label">Assinatura Premium</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>A Assinatura Premium oferece acesso ilimitado a todo o catálogo de filmes e séries por R$ 39,99 por mês.</p>
+                    <p>Perfeito para os verdadeiros amantes de cinema e séries que querem acesso completo ao serviço.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Assinatura Familiar -->
+    <div class="modal fade" id="modalAssinatura3" tabindex="-1" aria-labelledby="modalAssinatura3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalAssinatura3Label">Assinatura Familiar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>A Assinatura Familiar oferece acesso simultâneo em múltiplos dispositivos por R$ 59,99 por mês.</p>
+                    <p>Perfeito para famílias que desejam compartilhar uma única conta com diferentes membros da família.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="container mt-4">
+        <h2 id="filmes">Filmes</h2>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <!-- Cards de Filmes -->
+            <div class="col">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modalFilme1">
+                    <img src="./img/V&F.jpg" class="card-img-top" alt="Velozes e Furiosos">
+                    <div class="card-body">
+                        <h5 class="card-title">Velozes e Furiosos</h5>
+                        <p class="card-text">Ação, Aventura</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal de Filme -->
+            <div class="modal fade" id="modalFilme1" tabindex="-1" aria-labelledby="modalFilme1Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalFilme1Label">Velozes e Furiosos</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Dominic Toretto (Vin Diesel) é o líder de uma gangue de corridas de ruas em Los Angeles que está sendo investigado pela polícia por roubo de equipamentos eletrônicos. Para investigá-lo é enviado Brian O'Conner (Paul Walker), que se infiltra na gangue na intenção de descobrir se Toretto é realmente o autor dos crimes ou se há alguém mais por trás deles.</p>
+                            <p>Ação, Aventura</p>
+                            <p><strong>Elenco:</strong> Paul Walker, Vin Diesel, Michelle Rodriguez</p>
+                            <p><strong>Direção:</strong>  Rob Cohen</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modalFilme2">
+                    <img src="./img/Transformers.jpg" class="card-img-top" alt="Transformers: O Despertar das Feras">
+                    <div class="card-body">
+                        <h5 class="card-title">Transformers: O Despertar das Feras</h5>
+                        <p class="card-text">Ação, Ficção Científica</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal de Filme -->
+            <div class="modal fade" id="modalFilme2" tabindex="-1" aria-labelledby="modalFilme2Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalFilme2Label">Transformers: O Despertar das Feras</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Transformers: O Despertar das Feras traz mais uma aventura épica pelo universo dos Transformers. Ambientada nos anos 1990, o filme levará o público a uma aventura global cheia de ação, enquanto os Maximals, Predacons e Terrorcons se juntam à batalha entre os Autobots e Decepticons na Terra. Noah (Anthony Ramos), um jovem astuto do Brooklyn, e Elena (Dominique Fishback), uma ambiciosa e talentosa pesquisadora de artefatos, são arrastados para o conflito enquanto Optimus Prime e os Autobots enfrentam o terrível novo inimigo empenhado em sua destruição chamado Scourge.</p>
+                            <p>Ação, Ficção Científica</p>
+                            <p><strong>Elenco:</strong> Anthony Ramos, Dominique Fishback, Luna Lauren Velez</p>
+                            <p><strong>Direção:</strong>  Steven Caple Jr</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modalFilm1">
+                    <img src="./img/La La.jpg" class="card-img-top" alt="La La Land: Cantando Estações">
+                    <div class="card-body">
+                        <h5 class="card-title">La La Land: Cantando Estações</h5>
+                        <p class="card-text">Musical, Romance</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalFilm1" tabindex="-1" aria-labelledby="modalFilm1Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalFilm1Label">La La Land: Cantando Estações</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Um pianista de jazz e uma atriz aspirante se apaixonam enquanto perseguem seus sonhos em Los Angeles.</p>
+                            <p><strong>Gênero:</strong> Musical, Romance</p>
+                            <p><strong>Elenco:</strong> Ryan Gosling, Emma Stone</p>
+                            <p><strong>Direção:</strong> Damien Chazelle</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+
+            <div class="col">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modalFilme3">
+                    <img src="./img/Ela disse, Ele Disse.png" class="card-img-top" alt="Ela Disse, Ele Disse">
+                    <div class="card-body">
+                        <h5 class="card-title">Ela Disse, Ele Disse</h5>
+                        <p class="card-text">Comédia, Romance</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal de Filme -->
+            <div class="modal fade" id="modalFilme3" tabindex="-1" aria-labelledby="modalFilme3Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalFilme3Label">Ela Disse, Ele Disse</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Ela Disse, Ele Disse acompanha Rosa (Duda Matte) e Léo (Marcus Bessa), adolescentes de 14 anos que acabaram de entrar em uma nova escola, onde precisam lidar com a difícil tarefa de fazer novos amigos. Enquanto Léo logo demonstra interesse em futebol, Rosa enfrenta problemas com Júlia (Maísa), a garota mais popular do colégio.</p>
+                            <p>Comédia, Romance</p>
+                            <p><strong>Elenco:</strong> Duda Matte, Marcus Bessa, Maisa Silva</p>
+                            <p><strong>Direção:</strong>  Cláudia Castro</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modalFilme4">
+                    <img src="./img/O Jardim.jpg" class="card-img-top" alt="O Jardim Secreto">
+                    <div class="card-body">
+                        <h5 class="card-title">O Jardim Secreto</h5>
+                        <p class="card-text">Drama, Fantasia</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal de Filme -->
+            <div class="modal fade" id="modalFilme4" tabindex="-1" aria-labelledby="modalFilme4Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalFilme4Label">O Jardim Secreto</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Uma história cativante sobre a curiosidade infantil e o poder de criar um mundo encantado. Depois de ficar órfã aos dez anos de idade, Mary Lennox é enviada para morar com o tio recluso em uma enorme propriedade em Yorkshire, na Inglaterra.</p>
+                            <p>Drama, Fantasia</p>
+                            <p><strong>Elenco:</strong>  Irène Jacob, Kate Maberly, Maggie Smith</p>
+                            <p><strong>Direção:</strong> Agnieszka Holland </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modalFilme5">
+                    <img src="./img/A Sogra Perfeita.jpg" class="card-img-top" alt="A Sogra Perfeita">
+                    <div class="card-body">
+                        <h5 class="card-title">A Sogra Perfeita</h5>
+                        <p class="card-text">Comédia</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal de Filme -->
+            <div class="modal fade" id="modalFilme5" tabindex="-1" aria-labelledby="modalFilme5Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalFilme5Label">A Sogra Perfeita</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Neide se separou do marido recentemente e deseja aproveitar ao máximo a vida de solteira. Atrapalhada pelo filho mais novo, ela decide juntar o rapaz com uma de suas funcionárias a todo custo.</p>
+                            <p>Comédia</p>
+                            <p><strong>Elenco:</strong>  Cacau Protásio, Luís Navarro, Polliana Aleixo</p>
+                            <p><strong>Direção:</strong> Cris D'Amato</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modalFilme6">
+                    <img src="./img/Jogador Nº 1.jpg" class="card-img-top" alt="Jogador Nº 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Jogador Nº 1</h5>
+                        <p class="card-text">Aventura, Ficção Científica</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal de Filme -->
+            <div class="modal fade" id="modalFilme6" tabindex="-1" aria-labelledby="modalFilme6Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalFilme6Label">Jogador Nº 1</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Num futuro distópico, em 2044, Wade Watts (Tye Sheridan), como o resto da humanidade, prefere a realidade virtual do jogo OASIS ao mundo real. Quando o criador do jogo, o excêntrico James Halliday (Mark Rylance) morre, os jogadores devem descobrir a chave de um quebra-cabeça diabólico para conquistar sua fortuna inestimável. Para vencer, porém, Watts terá de abandonar a existência virtual e ceder a uma vida de amor e realidade da qual sempre tentou fugir.</p>
+                            <p>Aventura, Ficção Científica</p>
+                            <p><strong>Elenco:</strong> Tye Sheridan, Olivia Cooke, Ben Mendelsohn</p>
+                            <p><strong>Direção:</strong>  Steven Spielberg</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modalFilme7">
+                    <img src="./img/CPL.png" class="card-img-top " alt="Crepúsculo">
+                    <div class="card-body">
+                        <h5 class="card-title">Crepúsculo</h5>
+                        <p class="card-text">Drama, Fantasia, Romance</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal de Filme -->
+            <div class="modal fade" id="modalFilme7" tabindex="-1" aria-labelledby="modalFilme7Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalFilme7Label">Crepúsculo</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Isabella Swan (Kristen Stewart) e seu pai, Charlie (Billy Burke), mudaram-se recentemente. No novo colégio ela logo conhece Edward Cullen (Robert Pattinson), um jovem admirado por todas as garotas locais e que mantém uma aura de mistério em torno de si. Eles aos poucos se apaixonam, mas Edward sabe que isto põe a vida de Isabella em risco.</p>
+                            <p>Drama, Fantasia, Romance</p>
+                            <p><strong>Elenco:</strong> Kristen Stewart, Robert Pattinson, Taylor Lautner</p>
+                            <p><strong>Direção:</strong> Catherine Hardwicke </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modalFilme12">
+                    <img src="./img/Uma Noite.jpg" class="card-img-top" alt="Uma Noite de Crime : A Fronteira">
+                    <div class="card-body">
+                        <h5 class="card-title">Uma Noite de Crime : A Fronteira</h5>
+                        <p class="card-text">Ação, Terror</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal de Filme -->
+            <div class="modal fade" id="modalFilme12" tabindex="-1" aria-labelledby="modalFilme12Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalFilme12Label">Uma Noite de Crime : A Fronteira</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Em Uma Noite de Crime - A Fronteira, Adela (Ana de la Reguera) e seu marido Juan (Tenoch Huerta) vivem no Texas, onde Juan trabalha como ajudante de fazenda para a rica família Tucker. Juan impressiona Caleb (Will Patton), mas isso alimenta a raiva e o ciúmes de Dylan (Josh Lucas), seu filho. Na manhã seguinte ao expurgo, uma gangue mascarada de assassinos ataca a família Tucker, incluindo a esposa de Dylan (Cassidy Freeman) e sua irmã (Leven Rambin), forçando as duas famílias a se unirem e lutarem enquanto o país se transforma em caos e os Estados Unidos começam a se desintegrar em torno deles.</p>
+                            <p>Ação, Terror</p>
+                            <p><strong>Elenco:</strong>  Ana de la Reguera, Tenoch Huerta, Josh Lucas</p>
+                            <p><strong>Direção:</strong>  Everardo Gout </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+            <div class="col">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modalFilme15">
+                    <img src="./img/the greatest.jpg" class="card-img-top" alt="The Greatest Showman">
+                    <div class="card-body">
+                        <h5 class="card-title">The Greatest Showman</h5>
+                        <p class="card-text">Drama , Musical</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal de Filme -->
+            <div class="modal fade" id="modalFilme15" tabindex="-1" aria-labelledby="modalFilme15Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalFilme15Label">The Greatest Showman</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>De origem humilde e desde a infância sonhando com um mundo mágico, P.T. Barnum (Hugh Jackman) desafia as barreiras sociais se casando com a filha do patrão do pai e dá o pontapé inicial na realização de seu maior desejo abrindo uma espécie de museu de curiosidades.</p>
+                            <p>Drama , Musical</p>
+                            <p><strong>Elenco:</strong> Hugh Jackman,Zac Efron,Zendaya</p>
+                            <p><strong>Direção:</strong> Michael Gracey</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+            <div class="col">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modalFilme19">
+                    <img src="./img/Missão impossível.jpg" class="card-img-top" alt="Missão impossível: Acerto de Contas Parte 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Missão impossível: Acerto de Contas Parte 1</h5>
+                        <p class="card-text"> Ação, Aventura, Espionagem</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal de Filme -->
+            <div class="modal fade" id="modalFilme19" tabindex="-1" aria-labelledby="modalFilme19Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalFilme19Label">Missão impossível: Acerto de Contas Parte 1</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>"Missão Impossível 7: Acerto de Contas Parte 1" é o sétimo filme da franquia de ação e espionagem, protagonizada por Tom Cruise no papel do agente Ethan Hunt. Neste novo capítulo, Ethan e sua equipe do IMF, composta por Ilsa Faust (Rebecca Ferguson), Benji Dunn (Simon Pegg) e Luther Stickell (Ving Rhames), são encarregados de rastrear uma nova e perigosa arma que, se cair em mãos erradas, pode ameaçar toda a humanidade. Com o futuro do mundo em jogo, eles embarcam em uma corrida frenética e mortal ao redor do planeta. Durante essa missão, Ethan enfrenta um novo e enigmático inimigo, sendo forçado a aceitar que nada pode ser mais importante do que a missão, nem mesmo sua própria vida.</p>
+                            <p> Ação, Aventura, Espionagem</p>
+                            <p><strong>Elenco:</strong>  Tom Cruise, Hayley Atwell, Ving Rhames</p>
+                            <p><strong>Direção:</strong> Christopher McQuarrie </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modalFilme25">
+                    <img src="./img/Clube.jpg" class="card-img-top" alt="Missão impossível: Acerto de Contas Parte 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Clube dos Vândalos</h5>
+                        <p class="card-text"> Drama , Thriller</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal de Filme -->
+            <div class="modal fade" id="modalFilme25" tabindex="-1" aria-labelledby="modalFilme25Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalFilme25Label">Clube dos Vândalos</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Kathy, um membro obstinado dos Vândalos, casado com um motociclista selvagem e imprudente chamado Benny, relata a evolução dos Vândalos ao longo de uma década, começando como um clube local de forasteiros unidos por bons tempos, motos barulhentas e respeito. por seu líder forte e constante, Johnny. Ao longo dos anos, Kathy faz o possível para navegar pela natureza indomável de seu marido e sua lealdade a Johnny, com quem ela sente que deve competir pela atenção de Benny. À medida que a vida nos Vândalos fica mais perigosa e o clube ameaça se tornar uma gangue mais sinistra, Kathy, Benny e Johnny são forçados a fazer escolhas sobre sua lealdade ao clube e entre si.</p>
+                            <p> Drama , Thriller</p>
+                            <p><strong>Elenco:</strong>  Jodie Comer, Austin Butler, Tom Hardy, Michael Shannon, Mike Faist.</p>
+                            <p><strong>Direção:</strong> Jeff Nichols </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </div>
+
+        <h2 class="mt-5" id="series">Séries</h2>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <!-- Cards de Séries -->
+            <div class="col">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modalSerie1">
+                    <img src="./img/ST.jpg" class="card-img-top " alt="Stranger Things">
+                    <div class="card-body">
+                        <h5 class="card-title">Stranger Things</h5>
+                        <p class="card-text">Drama, Fantasia, Terror</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal de Série -->
+            <div class="modal fade" id="modalSerie1" tabindex="-1" aria-labelledby="modalSerie1Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalSerie1Label">Stranger Things</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Quando um rapaz desaparece, uma pequena vila descobre um mistério relacionado com experiências secretas, assustadoras forças sobrenaturais e uma estranha rapariga.</p>
+                            <p>Drama, Fantasia, Terror</p>
+                            <p><strong>Elenco:</strong> Winona Ryder, David Harbour, Millie Bobby Brown</p>
+                            <p><strong>Criadores:</strong>  Matt Duffer, Ross Duffer</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modalSerie2">
+                    <img src="./img/Manifest.jpg" class="card-img-top" alt="Manifest: O Mistério do Voo 828">
+                    <div class="card-body">
+                        <h5 class="card-title">Manifest: O Mistério do Voo 828</h5>
+                        <p class="card-text">Drama, Mistério</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal de Série -->
+            <div class="modal fade" id="modalSerie2" tabindex="-1" aria-labelledby="modalSerie2Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalSerie2Label">Manifest: O Mistério do Voo 828</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Em Manifest, um grupo de pessoas viaja da Jamaica de volta para Nova Iorque no voo 828. Durante o percurso, um problema nos controles causa uma inesperada turbulência que os deixa apavorados. Embora o susto seja grande, tudo se resolve rapidamente, e nenhum passageiro se fere. Mas, ao chegar na terra, eles fazem uma descoberta inacreditável: que para eles pareceu algumas horas no ar, na verdade foram cinco anos para o resto do mundo. Suas famílias acreditavam que eles estavam mortos e já haviam perdido toda a esperança, mas agora eles recebem uma segunda chance.</p>
+                            <p>Drama, Mistério</p>
+                            <p><strong>Elenco:</strong> Melissa Roxburgh, Josh Dallas, J.R. Ramirez</p>
+                            <p><strong>Direção:</strong> Jeff Rake</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modalSerie7">
+                    <img src="./img/La Casa de Papel.jpg" class="card-img-top " alt="La Casa de Papel">
+                    <div class="card-body">
+                        <h5 class="card-title">La Casa de Papel</h5>
+                        <p class="card-text">Ação, Crime, Mistério</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal de Série -->
+            <div class="modal fade" id="modalSerie7" tabindex="-1" aria-labelledby="modalSerie7Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalSerie7Label">La Casa de Papel</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Oito ladrões fazem reféns e fecham-se dentro da Casa Nacional da Moeda de Espanha, enquanto um génio do crime manipula a polícia para executar o seu plano.</p>
+                            <p>Ação, Crime, Mistério</p>
+                            <p><strong>Elenco:</strong> Úrsula Corberó, Álvaro Morte, Itziar Ituño</p>
+                            <p><strong>Criadores:</strong> Álex Pina</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modalSerie4">
+                    <img src="./img/The Mandalorian.png" class="card-img-top" alt="The Mandalorian">
+                    <div class="card-body">
+                        <h5 class="card-title">The Mandalorian</h5>
+                        <p class="card-text">Ação, Aventura, Ficção Científica</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal de Série -->
+            <div class="modal fade" id="modalSerie4" tabindex="-1" aria-labelledby="modalSerie4Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalSerie4Label">The Mandalorian</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Em "The Mandalorian," seguimos Din Djarin (Pedro Pascal), um caçador de recompensas solitário. Após a queda do Império, ele recebe uma missão para capturar um alvo de cinquenta anos. Ao encontrar o alvo, descobre que é Grogu, uma criatura da mesma raça que Yoda. Din decide proteger Grogu em vez de entregá-lo, embarcando numa jornada para entender suas origens. Eles são perseguidos por Moff Gideon, um ex-governador do Império determinado a capturar Grogu. A série mostra as aventuras e desafios enfrentados por Din e Grogu enquanto eles navegam por territórios perigosos da galáxia.</p>
+                            <p>Ação, Aventura, Ficção Científica</p>
+                            <p><strong>Elenco:</strong> Pedro Pascal, Pedro Pascal, Katee Sackhoff</p>
+                            <p><strong>Criadores:</strong> Jon Favreau</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modalSerie5">
+                    <img src="./img/tapas e beijos.png" class="card-img-top" alt="Tapas & Beijos">
+                    <div class="card-body">
+                        <h5 class="card-title">Tapas & Beijos</h5>
+                        <p class="card-text">Comédia, Romance</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal de Série -->
+            <div class="modal fade" id="modalSerie5" tabindex="-1" aria-labelledby="modalSerie5Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalSerie5Label">Tapas & Beijos</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Fátima e Sueli trabalham na Djalma Noivas, no bairro de Copacabana, Rio de Janeiro. Apesar de serem solteiras e independentes, ambas procuram encontrar o grande amor de suas vidas, mas os seus relacionamentos são muito tumultuados.</p>
+                            <p>Comédia, Romance</p>
+                            <p><strong>Elenco:</strong>  Fernanda Torres, Andréa Beltrão, Vladimir Brichta</p>
+                            <p><strong>Direção:</strong>  Cláudio Paiva</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="col">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modalSerie9">
+                    <img src="./img/Game of Thrones.jpg" class="card-img-top" alt="Game of Thrones">
+                    <div class="card-body">
+                        <h5 class="card-title">Game of Thrones</h5>
+                        <p class="card-text">Drama, Fantasia</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal de Série -->
+            <div class="modal fade" id="modalSerie9" tabindex="-1" aria-labelledby="modalSerie9Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalSerie9Label">Game of Thrones</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Game of Thrones conta a história de um lugar onde uma força destruiu o equilíbrio das estações, há muito tempo. Em uma terra onde os verões podem durar vários anos e o inverno toda uma vida, as reivindicações e as forças sobrenaturais correm as portas do Reino dos Sete Reinos. A irmandade da Patrulha da Noite busca proteger o reino de cada criatura que pode vir de lá da Muralha, mas já não tem os recursos necessários para garantir a segurança de todos. Depois de um verão de dez anos, um inverno rigoroso promete chegar com um futuro mais sombrio. Enquanto isso, conspirações e rivalidades correm no jogo político pela disputa do Trono de Ferro, o símbolo do poder absoluto.</p>
+                            <p>Drama, Fantasia</p>
+                            <p><strong>Elenco:</strong>  Kit Harington, Emilia Clarke, Lena Headey</p>
+                            <p><strong>Direção:</strong>  D.B. Weiss, David Benioff</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>             
+            <div class="col">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modalSerie6">
+                    <img src="./img/ELITE.jpg" class="card-img-top" alt="Elite">
+                    <div class="card-body">
+                        <h5 class="card-title">Elite</h5>
+                        <p class="card-text">Drama, Mistério</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalSerie6" tabindex="-1" aria-labelledby="modalSerie6Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalSerie1Label">Elite</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Quando três adolescentes da classe trabalhadora se matriculam em uma escola de elite na Espanha, o confronto entre eles e os alunos ricos leva a um assassinato.</p>
+                            <p><strong>Gênero:</strong> Drama, Mistério</p>
+                            <p><strong>Elenco:</strong> Itzan Escamilla, Miguel Bernardeau, Danna Paola</p>
+                            <p><strong>Direção:</strong> Carlos Montero, Darío Madrona</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modalSerie3">
+                    <img src="./img/Grey's Anatomy.jpg" class="card-img-top" alt="Grey's Anatomy">
+                    <div class="card-body">
+                        <h5 class="card-title">Grey's Anatomy</h5>
+                        <p class="card-text">Drama, Médico</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal de Série -->
+            <div class="modal fade" id="modalSerie3" tabindex="-1" aria-labelledby="modalSerie3Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalSerie3Label">Grey's Anatomy</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>A série foca na vida de médicos cirurgiões internos, residentes e atendentes; e como eles evoluem na sua profissão ao tentar manter a vida dos seus pacientes e nos seus relacionamentos pessoais.</p>
+                            <p>Drama, Médico</p>
+                            <p><strong>Elenco:</strong> Chandra Wilson, Ellen Pompeo, Chandra Wilson</p>
+                            <p><strong>Direção:</strong> Shonda Rhimes</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modalSerie8">
+                    <img src="./img/The Witcher.png" class="card-img-top" alt="The Witcher">
+                    <div class="card-body">
+                        <h5 class="card-title">The Witcher</h5>
+                        <p class="card-text">Ação, Aventura, Drama</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal de Série -->
+            <div class="modal fade" id="modalSerie8" tabindex="-1" aria-labelledby="modalSerie8Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalSerie8Label">The Witcher</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Em "The Witcher", série da Netflix, Geralt de Rivia (Henry Cavill) é um caçador de monstros solitário em busca de seu lugar num mundo onde as pessoas são mais cruéis que as criaturas. Ele cruza caminhos com a feiticeira Yennefer de Vengerberg (Anya Chalotra) e a princesa Cintran Ciri (Freya Allan). A história segue os três personagens em diferentes linhas do tempo até que suas vidas se conectam na Batalha de Sodden Hill contra os invasores de Nilfgaard. Geralt e Ciri estão ligados pelo destino devido a um favor que ele fez aos pais dela antes de seu nascimento. Geralt fica encarregado de proteger Ciri e seu reino, evitando que seus poderes sejam corrompidos.</p>
+                            <p>Ação, Aventura, Drama</p>
+                            <p><strong>Elenco:</strong>  Henry Cavill, Henry Cavill, Anya Chalotra</p>
+                            <p><strong>Criadores:</strong> Lauren Schmidt Hissrich</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modalSerie10">
+                    <img src="./img/Bridgerton.png" class="card-img-top" alt="Bridgerton">
+                    <div class="card-body">
+                        <h5 class="card-title">Bridgerton</h5>
+                        <p class="card-text">Drama</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal de Série -->
+            <div class="modal fade" id="modalSerie10" tabindex="-1" aria-labelledby="modalSerie10Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalSerie10Label">Bridgerton</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Enquanto as novas debutantes sonham em ser o diamante da temporada, uma moça discreta, que leva uma vida dupla, descobre o próprio brilho em meio a segredos e surpresas.</p>
+                            <p>Ação, Aventura, Drama</p>
+                            <p><strong>Elenco:</strong> Adjoa Andoh, Julie Andrews, Lorraine Ashbourne</p>
+                            <p><strong>Criadores:</strong> Chris Van Dusen</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modalSerie20">
+                    <img src="./img/A Casa do Dragão.png" class="card-img-top" alt="A Casa do Dragão">
+                    <div class="card-body">
+                        <h5 class="card-title">A Casa do Dragão</h5>
+                        <p class="card-text">Drama, Fantasia</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal de Série -->
+            <div class="modal fade" id="modalSerie20" tabindex="-1" aria-labelledby="modalSerie20Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalSerie20Label">A Casa do Dragão</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Baseada no livro Fogo & Sangue de George R. R. Martin, House of the Dragon é um spin-off de Game of Thrones que narra a história de conquista de terras em Westeros, mais conhecida como a Dança dos Dragões. Situada mais de 200 anos antes dos eventos da série original, em A Casa do Dragão acompanhamos a guerra civil que acontece enquanto os meio-irmãos Aegon II (Tom Glynn-Carney) e Rhaenyra (Emma D'Arcy) almejam o trono após a morte do pai Viserys I (Paddy Considine). Rhaenyra é a filha mais velha, contudo, Aegon é o filho homem de um segundo casamento, o que acaba gerando uma crescente tensão entre dois clãs Targaryen sobre quem tem o verdadeiro direito ao trono.</p>
+                            <p>Drama, Fantasia</p>
+                            <p><strong>Elenco:</strong> Paddy Considine, Milly Alcock, Matt Smith </p>
+                            <p><strong>Direção:</strong> George R.R. Martin, Ryan Condal</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modalSerie28">
+                    <img src="./img/Olhar Indiscreto.jpg" class="card-img-top" alt="Olhar Indiscreto">
+                    <div class="card-body">
+                        <h5 class="card-title">Olhar Indiscreto</h5>
+                        <p class="card-text">Suspense</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal de Série -->
+            <div class="modal fade" id="modalSerie28" tabindex="-1" aria-labelledby="modalSerie28Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalSerie28Label">Olhar Indiscreto</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>"Olhar Indiscreto" é uma série sobre Miranda (Debora Nascimento), uma hacker talentosa e voyeur que passa os dias espionando a vida de sua vizinha Cléo (Emanuelle Araújo), uma acompanhante de luxo. Quando Cléo pede que Miranda cuide de seu cachorro durante uma viagem, a vida da hacker muda drasticamente. Ao se envolver com o mundo obscuro de Cléo, Miranda começa a viver seus desejos mais íntimos e entra em um triângulo amoroso intenso e perigoso. Simultaneamente, um cliente a contrata para investigar um esquema de tráfico de mulheres, levando-a a suspeitar da ligação de Cléo com o crime. Miranda se vê cada vez mais envolvida no universo da vizinha, enquanto confronta seu passado e questiona suas novas escolhas.</p>
+                            <p>Suspense</p>
+                            <p><strong>Elenco:</strong> Débora Nascimento, Emanuelle Araújo, Nikolas Antunes </p>
+                            <p><strong>Direção:</strong> Marcela Citterio</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- Seção de Documentários -->
+<h2 class="mt-5" id="documentarios">Documentários</h2>
+<div class="row row-cols-1 row-cols-md-4 g-4">
+    <!-- Cards de Documentários -->
+    <div class="col">
+        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modalDoc1">
+            <img src="./img/SENNA.png" class="card-img-top" alt="Senna: O Brasileiro, O Herói, O Campeão">
+            <div class="card-body">
+                <h5 class="card-title">Senna: O Brasileiro, O Herói, O Campeão</h5>
+                <p class="card-text">Biopic, Documentário</p>
+            </div>
+        </div>
+    </div>
+    <!-- Modal de Documentário 1 -->
+    <div class="modal fade" id="modalDoc1" tabindex="-1" aria-labelledby="modalDoc1Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalDoc1Label">Senna: O Brasileiro, O Herói, O Campeão</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>A história do ídolo brasileiro da Formula 1, Ayrton Senna. Toda sua trajetória do tricampeão mundial, contada desde a ascensão no automobilismo até sua morte em pleno GP de San Marino, em 1994.</p>
+                    <p>Biopic, Documentário</p>
+                    <p><strong>Elenco:</strong> Ayrton Senna, Jackie Stewart, Galvão Bueno</p>
+                    <p><strong>Direção:</strong> Asif Kapadia</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modalDoc2">
+            <img src="./img/O Sal.jpg" class="card-img-top" alt="Outro Documentário">
+            <div class="card-body">
+                <h5 class="card-title">O Sal da Terra</h5>
+                <p class="card-text">Biopic, Documentário</p>
+            </div>
+        </div>
+    </div>
+    <!-- Modal de Documentário 2 -->
+    <div class="modal fade" id="modalDoc2" tabindex="-1" aria-labelledby="modalDoc2Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalDoc2Label">Outro Documentário</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>O filme conta um pouco da longa trajetória do renomado fotógrafo brasileiro Sebastião Salgado e apresenta seu ambicioso projeto "Gênesis", expedição que tem como objetivo registrar, a partir de imagens, civilizações e regiões do planeta até então inexploradas.</p>
+                    <p>Biopic, Documentário</p>
+                    <p><strong>Elenco:</strong>  Sebastião Salgado, Wim Wenders, Juliano Ribeiro Salgado</p>
+                    <p><strong>Direção:</strong> Wim Wenders, Juliano Ribeiro Salgado</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modalDoc30">
+            <img src="./img/Mamonas para sempre.png" class="card-img-top" alt="Mamonas pra sempre">
+            <div class="card-body">
+                <h5 class="card-title">Mamonas pra sempre</h5>
+                <p class="card-text">Documentário</p>
+            </div>
+        </div>
+    </div>
+    <!-- Modal de Documentário 2 -->
+    <div class="modal fade" id="modalDoc30" tabindex="-1" aria-labelledby="modalDoc30Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalDoc30Label">Mamonas pra sempre</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Documentário sobre a banda brasileira Mamonas Assassinas, que foi vítima de um acidente aéreo fatal em 1996.</p>
+                    <p>Documentário</p>
+                    <p><strong>Elenco:</strong>  Dinho, Mamonas Assassinas, Bento Hinoto</p>
+                    <p><strong>Direção:</strong> Cláudio Kahns</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Adicione mais cards e modais para outros documentários aqui conforme necessário -->
+
+</div>
+
+    </main>
+
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 PAS Play. Todos os direitos reservados.</p>
+            <div class="mt-2">
+                <a href="#" class="text-light mx-2">Sobre</a>
+                <a href="#" class="text-light mx-2">Termos de Uso</a>
+                <a href="#" class="text-light mx-2">Política de Privacidade</a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Link para o JavaScript personalizado -->
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
