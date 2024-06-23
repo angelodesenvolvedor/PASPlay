@@ -16,7 +16,7 @@ O objetivo principal do PAS Play é proporcionar uma experiência de streaming d
    
 5. **Segurança e Privacidade:** Medidas robustas de segurança para proteger informações pessoais dos usuários e dados de pagamento.
 
-# 📦 Tecnologias Usadas:
+# 💻 Tecnologias Usadas:
 
 Para criar o PAS Play, foram utilizadas as seguintes tecnologias e ferramentas:
 
