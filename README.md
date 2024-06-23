@@ -32,6 +32,6 @@ Para criar o PAS Play, foram utilizadas as seguintes tecnologias e ferramentas:
 * **Angelo Silvano** - *Front-End Developer* - [angelodesenvolvedor](https://github.com/angelodesenvolvedor)
   
 # 📄 Licença
-- Esse projeto está sob a licença MIT license - acesse os detalhes [LICENSE.md](https://github.com/angelodesenvolvedor/FootCoder/tree/main?tab=MIT-1-ov-file)  
+- Esse projeto está sob a licença MIT license - acesse os detalhes [LICENSE.md](https://github.com/angelodesenvolvedor/PASPlay?tab=MIT-1-ov-file)  
      
 
