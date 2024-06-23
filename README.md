@@ -22,8 +22,8 @@ Para criar o PAS Play, foram utilizadas as seguintes tecnologias e ferramentas:
 
 1. **Frontend:**
    - ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-   - ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) (Bootstrap para estilos responsivos)
+   - ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)-(Bootstrap para estilos responsivos)
    - ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 2. **Framework:**
-   - ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white) (para componentes de interface do usuário e responsividade)
+   - ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)-(para componentes de interface do usuário e responsividade)
 
