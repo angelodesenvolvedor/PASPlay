@@ -1,13 +1,64 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+main {
+    flex: 1;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .modal-body {
     text-align: justify;
     font-size: 1rem;
-    line-height: 1.8;
+    line-height: 1.8; 
+}
+
+.modal-body p strong {
+    color: #343a40;
+}
+
+.modal-lg {
+   max-width: 800px;
 }
 
 .card-img-top {
     width: 100%;
     height: 300px;
-    object-fit: contain;
+    object-fit: contain; 
+    background-color: #e9ecef; 
+}
+
+.content-card {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border: none;
+    overflow: hidden;
+    border-radius: 8px; 
+}
+
+.content-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-text.text-muted {
+    font-size: 0.85rem;
+}
+
+#modalidades-assinatura .card {
+    border-radius: 10px;
 }
 
 .carousel-item img {
@@ -26,7 +77,18 @@
     background-color: rgba(255, 255, 255, 0.8);
     padding: 12px;
     border-radius: 12px;
+    text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.4); 
 }
+
+.custom-caption p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
 
 footer {
     background-color: #343a40;
@@ -44,29 +106,51 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* --- Media Queries --- */
+
 @media (max-width: 768px) {
     footer .container {
         text-align: center;
+    }
+    footer .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .col-md-4 {
+        margin-bottom: 20px;
     }
     footer .mt-md-0 {
         margin-top: 1rem !important;
     }
     .custom-caption {
         width: 90%;
+        padding: 10px;
     }
     .modal-body {
-        font-size: 0.8rem;
+        font-size: 0.9rem; 
+        line-height: 1.7;
+    }
+    .carousel-item img {
+        height: 400px; 
     }
 }
 
 @media (max-width: 576px) {
     .modal-body {
-        font-size: 0.9rem;
+        font-size: 0.9rem; 
     }
     .card-img-top {
         height: 200px;
     }
     .carousel-item img {
         height: 300px;
+    }
+    .custom-caption h5 {
+        font-size: 1rem;
+    }
+     .custom-caption p {
+        font-size: 0.8rem;
+         -webkit-line-clamp: 3; 
+         line-clamp: 3; 
     }
 }
