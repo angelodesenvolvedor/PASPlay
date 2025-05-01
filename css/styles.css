@@ -51,4 +51,22 @@ footer a:hover {
     footer .mt-md-0 {
         margin-top: 1rem !important;
     }
+    .custom-caption {
+        width: 90%;
+    }
+    .modal-body {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .modal-body {
+        font-size: 0.9rem;
+    }
+    .card-img-top {
+        height: 200px;
+    }
+    .carousel-item img {
+        height: 300px;
+    }
 }
